@@ -13,6 +13,9 @@ def start_message(message):
 		bot.send_message(message.chat.id, 'Привет, я wikipedia-bot, напиши мне то, о чём ты хочешь узнать')
 	else:
 		bot.send_message(message.chat.id, f'Привет, {message.from_user.username}, я wikipedia-bot, напиши мне то, о чём ты хочешь узнать')
+		
+		
+		
 @bot.message_handler(content_types=['text'])
 def send_text(message):
 	try:
